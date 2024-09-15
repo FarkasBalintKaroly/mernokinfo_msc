@@ -14,27 +14,30 @@ namespace Domino_Project_v2
             // Create map from file
             string file_path = @"../../map-configs/map-config-2.txt";
 
+            // Read file + extract to arrays
             (int[] map, int[][] lines) = ProcessFile(file_path);
 
+            // Draw some dominos -- Starting state
             Console.WriteLine("Kiinduló állapot:");
             draw_map(map);
             write_map(map);
 
 
+            // Try placing dominos
             while (true)
             {
                 int can_place = place_dominos(map, lines);
                 if (can_place == -1) break;
             }
 
+            // Eliminate end state
             eliminate(map);
-
-
             Console.ReadLine();
         }
 
         private static void eliminate(int[] map)
         {
+            // Eliminating if we could place dominos to all places or not + drawing end state
             if (map.Sum() == map.Length)
             {
                 Console.WriteLine("Siker");
@@ -80,6 +83,7 @@ namespace Domino_Project_v2
 
         private static int place_dominos(int[] map, int[][] lines)
         {
+            // Placing dominos
             int border;
             for (int i  = 0; i < lines.Length+1; i++)
             {
@@ -110,7 +114,7 @@ namespace Domino_Project_v2
 
         private static void write_map(int[] map)
         {
-            // function for write down the actual state of the map
+            // Write down the actual state of the map
             for (int i = 0; i < map.Length; i++)
             {
                 Console.Write(map[i]);
@@ -120,7 +124,7 @@ namespace Domino_Project_v2
 
         private static (int[] map, int[][] lines) ProcessFile(string file_path)
         {
-            // Function to process file and create arrays
+            // Process file and create arrays
             string[] read_lines = File.ReadAllLines(file_path);
 
             // Extract map size and create an array
