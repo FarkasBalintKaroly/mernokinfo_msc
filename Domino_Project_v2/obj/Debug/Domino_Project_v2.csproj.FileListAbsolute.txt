@@ -1,0 +1,7 @@
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\bin\Debug\Domino_Project_v2.exe.config
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\bin\Debug\Domino_Project_v2.exe
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\bin\Debug\Domino_Project_v2.pdb
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\obj\Debug\Domino_Project_v2.csproj.AssemblyReference.cache
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\obj\Debug\Domino_Project_v2.csproj.CoreCompileInputs.cache
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\obj\Debug\Domino_Project_v2.exe
+D:\Mernokinfo_msc\Prog_paradigm\Domino_Project_v2\obj\Debug\Domino_Project_v2.pdb
